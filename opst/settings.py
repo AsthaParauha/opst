@@ -31,13 +31,13 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = False
 
 # add the host which is allowed
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["https://opst.onrender.com"]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173", "name of frontnd app url"
+    "https://opst-web.onrender.com",
 ]
 CSRF_TRUSTED_ORIGINS = [
-    "http://localhost:5173",
+    "https://opst-web.onrender.com",
 ]
 
 CORS_ALLOW_HEADERS = [
