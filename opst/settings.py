@@ -101,14 +101,10 @@ WSGI_APPLICATION = "opst.wsgi.application"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    "default": dj_database_url.parse(os.getenv("postgresql://opst_database_user:WGIMT6ikoV3rhITWOXlsVnJ9rkG1h1NZ@dpg-d6chjelm5p6s73epep0g-a.singapore-postgres.render.com/opst_database"))
+    "default": dj_database_url.parse(
+        os.environ.get("DATABASE_URL")
+    )
 }
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.sqlite3",
-#         "NAME": BASE_DIR / "db.sqlite3",
-#     }
-# }
 
 
 # Password validation
