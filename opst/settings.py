@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = False
 
 # add the host which is allowed
-ALLOWED_HOSTS = ["opst.onrender.com", "onrender.com"]
+ALLOWED_HOSTS = ["opst.onrender.com", ".onrender.com"]
 
 CORS_ALLOWED_ORIGINS = [
     "https://opst-web.onrender.com",
