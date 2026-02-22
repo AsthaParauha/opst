@@ -31,7 +31,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = False
 
 # add the host which is allowed
-ALLOWED_HOSTS = ["https://opst.onrender.com"]
+ALLOWED_HOSTS = ["opst.onrender.com", "onrender.com"]
 
 CORS_ALLOWED_ORIGINS = [
     "https://opst-web.onrender.com",
@@ -141,7 +141,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
